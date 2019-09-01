@@ -13,5 +13,6 @@
 <body>
     <h3>this is my first project</h3>
     <a href="hello">start process</a>
+    <a href="param/test?user=czz&passwd=123">test param</a>
 </body>
 </html>
