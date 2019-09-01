@@ -14,5 +14,14 @@
     <h3>this is my first project</h3>
     <a href="hello">start process</a>
     <a href="param/test?user=czz&passwd=123">test param</a>
+
+    <form action="param/save" method="post">
+        用&ensp;户&ensp;名：<input type="text" name="uname" /><br>
+        密&emsp;&emsp;码：<input type="text" name="passwd"/><br>
+        金&emsp;&emsp;额：<input type="text" name="money"/><br>
+        姓&emsp;&emsp;名：<input type="text" name="user.name"/><br>
+        年&emsp;&emsp;龄：<input type="text" name="user.age"/><br>
+        <input type="submit" value="commit"/>
+    </form>
 </body>
 </html>
