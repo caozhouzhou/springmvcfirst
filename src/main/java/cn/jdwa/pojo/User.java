@@ -1,6 +1,7 @@
 package cn.jdwa.pojo;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by czz on 2019/9/1.
@@ -8,6 +9,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String name;
     private Integer age;
+    private Date birthDay;
 
     public String getName() {
         return name;
@@ -25,11 +27,20 @@ public class User implements Serializable {
         this.age = age;
     }
 
+    public Date getBirthDay() {
+        return birthDay;
+    }
+
+    public void setBirthDay(Date birthDay) {
+        this.birthDay = birthDay;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", birthDay=" + birthDay +
                 '}';
     }
 }
