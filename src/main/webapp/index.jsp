@@ -30,5 +30,6 @@
         生&emsp;&emsp;日：<input type="text" name="birthDay"/><br>
         <input type="submit" value="commit"/>
     </form>
+    <a href="param/test1">test param</a>
 </body>
 </html>
