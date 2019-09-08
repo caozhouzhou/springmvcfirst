@@ -12,13 +12,16 @@
 </head>
 <body>
     <h3>springmvc注解</h3>
-    <%--<a href="anno/testRequestParam?name=23"> testRequestParam</a>--%>
-    <%--<form action="anno/testRequestBody" method="post">--%>
-        <%--姓&emsp;&emsp;名：<input type="text" name="name"/><br>--%>
-        <%--年&emsp;&emsp;龄：<input type="text" name="age"/><br>--%>
-        <%--<input type="submit" value="commit"/>--%>
-    <%--</form>--%>
+    <a href="anno/testRequestParam?name=23"> testRequestParam</a>
+    <form action="anno/testRequestBody" method="post">
+        姓&emsp;&emsp;名：<input type="text" name="name"/><br>
+        年&emsp;&emsp;龄：<input type="text" name="age"/><br>
+        <input type="submit" value="commit"/>
+    </form>
 
     <a href="anno/czz/testPathVariable/12"> testPathVariable</a>
+    <a href="anno/testRequestHeader">testRequestHeader</a>
+    <a href="anno/testCookieValue">testCookieValue</a>
+
 </body>
 </html>

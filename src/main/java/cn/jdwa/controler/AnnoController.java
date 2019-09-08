@@ -1,10 +1,7 @@
 package cn.jdwa.controler;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by czz on 2019/9/7.
@@ -32,6 +29,20 @@ public class AnnoController {
         System.out.println("执行了。。。");
         System.out.println(user);
         System.out.println(id);
+        return "success";
+    }
+
+    @RequestMapping("/testRequestHeader")
+    public String testRequestHeader(@RequestHeader("Accept") String header){
+        System.out.println("执行了。。。");
+        System.out.println(header);
+        return "success";
+    }
+
+    @RequestMapping("/testCookieValue")
+    public String testCookieValue(@CookieValue("JSESSIONID") String header){
+        System.out.println("执行了。。。");
+        System.out.println(header);
         return "success";
     }
 }
