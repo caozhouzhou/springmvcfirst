@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
  * Created by czz on 2019/9/7.
@@ -57,14 +58,34 @@ public class AnnoController {
         return "success";
     }
 
+    @RequestMapping("/testModelAttribute1")
+    public String testModelAttribute1(@ModelAttribute("czz")User user){
+        System.out.println("testModelAttribute执行了。。。");
+//        System.out.println(header);
+        System.out.println(user);
+        return "success";
+    }
+
     @ModelAttribute
-    public User showUser(String name,int age){
+    public void showUser(String name, Map<String,User> map){
         System.out.println("showUser执行了。。。");
         User user = new User();
         user.setName(name);
-        user.setAge(age);
+        user.setAge(20);
         user.setBirthDay(new Date());
+        map.put("czz",user);
 //        System.out.println(header);
-        return user;
+//        return user;
     }
+
+//    @ModelAttribute
+//    public User showUser(String name,int age){
+//        System.out.println("showUser执行了。。。");
+//        User user = new User();
+//        user.setName(name);
+//        user.setAge(age);
+//        user.setBirthDay(new Date());
+////        System.out.println(header);
+//        return user;
+//    }
 }
