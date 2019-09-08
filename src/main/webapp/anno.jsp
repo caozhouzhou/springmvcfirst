@@ -35,5 +35,9 @@
         <input type="submit" value="commit"/>
     </form>
 
+    <a href="anno/testSetSessionAttribute"> testSetSessionAttribute</a>
+    <a href="anno/testGetSessionAttribute"> testGetSessionAttribute</a>
+    <a href="anno/testDelSessionAttribute"> testDelSessionAttribute</a>
+
 </body>
 </html>
