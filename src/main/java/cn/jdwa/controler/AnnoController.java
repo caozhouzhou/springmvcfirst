@@ -45,4 +45,18 @@ public class AnnoController {
         System.out.println(header);
         return "success";
     }
+
+    @RequestMapping("/testModelAttribute")
+    public String testModelAttribute(){
+        System.out.println("testModelAttribute执行了。。。");
+//        System.out.println(header);
+        return "success";
+    }
+
+    @ModelAttribute
+    public String showUser(){
+        System.out.println("showUser执行了。。。");
+//        System.out.println(header);
+        return "success";
+    }
 }

@@ -23,5 +23,11 @@
     <a href="anno/testRequestHeader">testRequestHeader</a>
     <a href="anno/testCookieValue">testCookieValue</a>
 
+    <form action="anno/testModelAttribute" method="post">
+        姓&emsp;&emsp;名：<input type="text" name="name"/><br>
+        年&emsp;&emsp;龄：<input type="text" name="age"/><br>
+        <input type="submit" value="commit"/>
+    </form>
+
 </body>
 </html>
